@@ -7,6 +7,7 @@ ENV token default_token
 ENV ip default_ip
 ENV port default_port
 ENV game default_game
+ENV message default_message
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied

@@ -11,7 +11,7 @@ function getStatus() {
         host: process.env.ip,
         port: process.env.port
     }).then((state) => {
-        client.user.setPresence({ activities: [{ name: `${state.players.length}/${state.maxplayers} players` }] });
+        client.user.setPresence({ activities: [{ name: `${state.players.length}/${state.maxplayers} ${process.env.message}` }] });
     }).catch((error) => {
         client.user.setPresence({ activities: [{ name: 'server offline' }] });
     });
