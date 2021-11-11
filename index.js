@@ -25,4 +25,4 @@ client.once('ready', () => {
     setInterval(getStatus, 120000);
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.token);
